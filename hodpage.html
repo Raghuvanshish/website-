@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chairman Page</title>
+    <style>
+        body {
+            background-color:white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        #img 
+        {
+            max-width: 100%;
+            border-radius: 5px;
+        
+        }
+        #paragraph {
+            font-size: 16px;
+            line-height: 1.5;
+            flex: 1;
+        }
+        #paragraph h1 {
+         margin-left: 30px;
+         font-size: 16px;
+
+
+        }
+        #paragraph img {
+            max-width:2%;
+            border-radius: 5px;
+            height: auto;
+            margin-right: 10px;
+            margin-left: 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto; /* Centering the table horizontally */
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Additional styles for separating sections */
+        section {
+            margin-bottom: 20px;
+        }
+
+        /* Styles for vertical tables */
+        table.vertical {
+            width: 100%;
+        }
+
+        table.vertical td {
+            display: block;
+            padding: 10px;
+        }
+
+        table.vertical td:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+    #centered-table {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="img">
+            <img src="{{ url_for('static', filename='Prof Manu.jpg') }}" title= "Prof. Manu Sood" alt= "Prof. Manu Sood">
+            <h4><b>Prof. Manu Sood</b></h4>
+        </div>
+        
+        <div id="paragraph">
+            <h1><b>DR. MANU SOOD</b></h1>
+            <div><img src="{{ url_for('static', filename='img2.png') }}"> Department of Data Science and Artificial Intelligence </div>
+            <div><img src="{{ url_for('static', filename='gate.jpg') }}"> Himachal Pradesh university,Shimla </div>
+        </div>
+    </div>
+<table>
+<center><h3>Basic Details</h3></center>
+<tr>
+<td><b>Name</b></td>
+<td><b>Designation</b></td>
+<td><b>Department</b></td>
+</tr>
+<tr>
+<td>Dr.MANU SOOD</td>
+<td>Professor</td>
+<td>Department of Data Science & Artificial Intelligence</td>
+</table>
+
+<center><div class="centered-table"> 
+ <table>
+         <h3>Qualification Details</h3>
+ </center>    
+                <tr>
+                    <td><b> Sr. No.</b></td>
+                    <td><b>Name of Degree</b></td>
+                    <td><b>University/Institute</b></td>
+                    <td><b>Passing Year</b></td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td>1.</td>
+                    <td>PhD. in Computer Engineering,Faculty of Technology,University of Delhi</td>
+                    <td>Netaji Subhash Institute of Technology(NSIT),Dwarka New Delhi</td>
+                    <td>2008</td>
+                </tr>
+               <tr>
+               <td>2.</td>
+               <td>M.Tech.(Information Systems)from Department of Computer Engineering</td>
+               <td>Netaji Subhash Institute of Technology,Dwarka New Delhi</td>
+               <td>2003</td>
+               </tr>
+               <tr>
+               <td>3.</td>
+               <td>Bachelor of Engineering</td>
+               <td>Govt. Engineering college,Jabalpur(Rani Durgavati Vishwavidyalaya,Jabalpur)</td>
+               <td>1988</td>
+               </tr>
+            </table>
+
+            <table>
+          <h3> Positions Held</h3>
+         <tr>
+         <td>Sr.No.</td>
+<td><b>Post held</b></td>
+<td><b>Organization</b></td>
+<td><b>Experience(In Years and Months)</b></td>
+</tr>
+<tr>
+<td>1.</td>
+<td>Professor, Department of Computer Science</td>
+<td>H. P. University, Shimla</td>
+<td>12 years</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Reader / Associate Professor, Department of Computer Science</td>
+<td>H. P. University, Shimla</td>
+<td>2 years and 4 Months</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>Lecturer (Assistant Professor), Department of Computer Science</td>
+<td>H. P. University, Shimla</td>
+<td>10 years and 9 Months</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>Programmer, Computer Centre</td>
+<td>H. P. University, Shimla</td>
+<td>3 years and 11 Months</td>
+</tr>
+     </table>
+     </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Himachal Pradesh University</p>
+    </footer>
+</p>
+</body>
+</html>

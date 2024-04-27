@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chairman Profile</title>
+    <style>
+       * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Times New Roman", sans-serif, arial;
+    font-size: 16px;
+    color: #242424;
+}
+
+
+
+.header {
+    background:green;
+    padding: 10px;
+}
+.text-container {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+
+
+.logo_text {
+    list-style: none;
+}
+.text-container ul.logo_text:hover {
+    transform: scale(1.2); /* Increase the size of the text by 20% on hover */
+    transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+
+.logo_line {
+    display: inline-block;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    font-size: 24px;
+    color: #035D1A;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.logo  {
+    height:120px; 
+    vertical-align: middle; 
+    margin:0 5px; 
+}
+
+
+.right-logo2 h4{
+         
+         position: absolute;
+         top: 60px;
+         right: 20px;
+         padding: 50px;
+         width: 300px;
+         text-align: right;
+         font-size: 1.2em;
+         text-shadow: 5px 1px 6px rgba(0, 1, 0,1);
+         color:black;
+}
+
+.navbar{
+    background-color: #333;
+    word-spacing:40px;
+
+ 
+	
+    }
+.navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+}
+
+ .home-logo {
+        width: 40px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        vertical-align: middle; /* Align the image vertically */
+        margin-right: 5px; /* Add some spacing between the image and text */
+	
+	
+    }
+.navbar li {
+         display: inline;
+}
+
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+.navbar a:hover {
+ background-color: #555;
+}
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 1em;
+        }
+
+        #profile {
+            display: grid;
+            align-items: flex-start;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+.image {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+   
+.logo img {
+    max-width:7%;
+    border-radius: 5px;
+}
+
+
+.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+.next {
+    text-align: center;
+}
+#footer-container{
+   margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content: center;
+    padding-left: 250px;
+    background-color: black;
+    height:410px; 
+    color: white;
+   text-decoration: none;
+      
+    
+
+}
+#upper{
+    display: flex;
+    flex-direction: row;
+    
+
+    
+}
+#middle{
+    display: flex;
+    flex-direction: row;
+}
+
+#part{
+    display: flex;
+    flex-direction: column;
+
+}
+#part a {
+      color: white;
+    text-decoration: none;
+}
+
+
+#part2{
+    margin-top: 45px;
+    padding-left:190px;
+
+    
+}
+#part2 a {
+      color: white;
+    text-decoration: none;
+}
+
+#part3{
+    margin-top: 45px;
+    padding-left:190px;
+    }
+#part3 a {
+      color: white;
+    text-decoration: none;
+    }
+#part4{
+    display: flex;
+    flex-direction: column;
+}
+#para5{
+    display: flex;
+    flex-direction: column;
+
+}
+#para6{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 25px;
+}
+
+
+        
+        </style>
+</head>
+<body>
+    <div class="header">
+        <marquee> <i>We welcome you to the website of Department of Data Science and Artificial Intelligence</i> </marquee>
+        </div>
+        <br>
+        <div class="text-container">
+            <ul class="logo_text">
+                <li class="logo_line">हिमाचल प्रदेश विश्वविद्यालय</li>
+                <img src="static/hpu logo.jpeg" alt="logo" class="logo">
+                <li class="logo_line">Himachal Pradesh University</li>
+            </ul>
+        </div>
+        <div class="right-logo2">
+            <h4>Department Of Data Science And Artificial Intelligence</h4>
+        </div>
+        <div class="navbar">
+            <ul>
+                
+                <li><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='home.jpeg') }}" alt="home-logo" class="home-logo"></a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('syllabus') }}">Syllabus</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contactus') }}">ContactUs </a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+        
+            </ul>
+        </div>
+        <br>
+
+    <header>
+        <h1>Chairman Profile</h1>
+    </header>
+    <main>
+        <section id="profile">
+             <div class="image">
+                <img src="{{ url_for('static', filename='Prof Manu.jpg') }}" alt="Chairman Image">
+                <h2>Prof. Manu Sood</h2>
+            </div>
+
+            <div class="logo">
+                
+                <table>
+<tr>
+<td>
+<img src="{{ url_for('static', filename='person.jpeg') }}" alt="Chairman Image">
+<span class="name"></span>    Prof. Manu Sood</h1>
+</td>
+</tr>
+<tr>
+<td>
+ <img src="{{ url_for('static', filename='img2.png') }}" alt="Chairman Image">
+<span class="designation"></span>Professor</h1>
+</td>
+</tr>
+<tr>
+<td>
+<img src="{{ url_for('static', filename='phone.png') }}" alt="Chairman Image">
+<span class="phone"></span>9418309695</h1>
+</td>
+</tr>
+<tr>
+<td>
+    <img src="{{ url_for('static', filename='email.jpeg') }}" alt="Chairman Image">
+<span class="e-mail"></i>manu.sood@hpuniv.ac.in</span>
+</td>
+</tr>   
+<tr>
+                    <td>
+               <a href=/hodpage><button>View Profile</a></button>
+                    </td>
+                </tr>         
+              
+            </div>
+       </table> 
+        
+    </main>
+</section>
+    <br>
+    <div class="next"
+    <footer>
+        <p>&copy; 2024 Himachal Pradesh University</p>
+    </footer>
+</div>
+<div id="footer-container">
+    <div id = "upper">
+      <div id = "part">
+        <div><h1>External Links</h1></div>
+        <br>
+        <div><a href="https://hpuniv.ac.in/innerpage/accessibility-statement.php">Accessibility</a></div>
+        <div><a href="https://hpuniv.ac.in/archives.php">Archive</a></div>
+        <div><a href="https://hpuniv.ac.in/downloads.php">Downloads</a></div>
+        <div><a href="https://hpuniv.ac.in/grivancesnew.php">Grievances</a></div>
+        <div><a href="https://hpuniv.ac.in/photogallery.php">Media Gallery</a></div>
+        <div><a href="https://hpuniv.ac.in/sitemap.php">Sitemap</a></div>
+        <div><a href="https://hpuniv.ac.in/syllabus.php">Syllabus</a></div>
+        <div><a href="https://email.gov.in/">Web Mail</a></div>
+        <div><a href="https://hpuniv.ac.in/university-detail/home.php?finance">Finance Wing</a></div>
+      </div>
+      <div id = "part2">
+        <div><a href="https://hpuniv.ac.in/university-detail/home.php?hp-university-alumni">Alumni</a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/awards-and-recognition.php">Awards and Recognition</a></div>
+        <div><a href="https://hpuniv.ac.in/feedback.php">Feedback</a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/help.php">Help</a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/related-links.php">Related Links</a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/spoken-tutorials.php">Spoken Tutorial</a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/terms--and-conditions.php">Terms & Conditions</a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/website-policies.php">Website Policies</a></div>
+        <div><a href="https://guesthouse.hpushimla.in/">Faculty House Online Booking</a></div>
+      </div>
+      <div id = "part3">
+        <div><a href="https://amanmovement.org/registration/public/amanmovement/">Anti Ragging Help Line </a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/conferences-and-events.php">Conferences and Events</a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/foreign-fellowships--and-conferences.php">Foreign Fellowships & Conferences</a></div>
+        <div><a href="https://hpuniv.ac.in/how-to-reach-maps.php">How to Reach?</a></div>
+        <div><a href="https://hpuniv.ac.in/innerpage/other-policies.php">Research and Development</a></div>
+        <div><a href="https://swayam.gov.in/">SWAYAM Programme</a></div>
+        <div><a href="https://hpuniv.ac.in/university-detail/home.php?ugc-hrdc">UGC-MMTTC</a></div>
+        <div><a href="https://hpuniv.ac.in/grivancesnew.php">Complaint Register(SC/ST/OBC)</a></div>
+      </div>
+    </div>
+<br>
+<hr>
+<br>
+        <div id="middile">
+        <h1>Address</h1>
+      <div id = "part4">
+        <div>Himachal Pradesh University</div>
+        <div>Summer Hill Shimla-1710005</div>
+        <div>Phone No: 01772833555</div>
+      </div>
+    </div>
+  </div>
+</hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+          

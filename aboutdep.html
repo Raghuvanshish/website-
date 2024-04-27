@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+
+</head>
+<body>
+    <div class="header">
+        <marquee> <i>We welcome you to the website of Department of Data Science and Artificial Intelligence</i> </marquee>
+        </div>
+        <br>
+        <div class="text-container">
+            <ul class="logo_text">
+                <li class="logo_line">हिमाचल प्रदेश विश्वविद्यालय</li>
+                <img src="static/hpu logo.jpeg" alt="logo" class="logo">
+                <li class="logo_line">Himachal Pradesh University</li>
+            </ul>
+        </div>
+        <div class="right-logo2">
+            <h4>Department Of Data Science And Artificial Intelligence</h4>
+        </div>
+        <div class="navbar">
+            <ul>
+                
+                <li><a href="{{ url_for('index') }}"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="{{ url_for('about') }}"><i class="fa-regular fa-file-lines"></i>About</a></li>
+                <li><a href="{{ url_for('syllabus') }}"><i class="fa-solid fa-book"></i>Syllabus</a></li>
+                <li><a href="{{ url_for('gallery') }}"><i class="fa-regular fa-image"></i>Gallery</a></li>
+                <li><a href="{{ url_for('contactus') }}"><i class="fa-solid fa-phone"></i>ContactUs </a></li>
+                <li><a href="{{ url_for('index') }}"><i class="fa-solid fa-user"></i>Login</a></li>
+        
+            </ul>
+        </div>
+        <br>
+    <div>
+        <h1 id = "heading"><center>About Us</center></h1>
+    </div>
+    <div id = "table">
+    <div>
+        The Department of Data Science & Artificial Intelligence at HImachal Pradesh University in Shimla is a dynamic and innovative hub of learning in the ever-evolving fields of data science and artificial intelligence. With a commitment to excellence, our department has established itself as a leading center of academic and technological advancement.
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        
+	Our department is dedicated to empowering students with a deep understanding of data science and artificial intelligence, equipping them with the knowledge and skills necessary to navigate the complexities of the data-driven world.At the Department of Data Science & Artificial Intelligence, we pride ourselves on our interdisciplinary approach, encouraging students to explore the multifaceted applications of these fields in diverse industries, from healthcare and finance to agriculture and beyond.
+
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        
+	Our state-of-the-art facilities and industry connections ensure that students have access to the latest technologies and practical experiences, facilitating their growth as future leaders in data science and artificial intelligence. Our academic programs offer a comprehensive curriculum that covers the fundamental principles and advanced applications of these fields, preparing students for exciting careers and groundbreaking research.
+    </div>
+    <div>&nbsp;</div>
+    <div>
+        
+	Join us on a journey of exploration, discovery, and innovation as we unlock the potential of data science and artificial intelligence in shaping the future. The Department of Data Science & Artificial Intelligence is your gateway to a world of endless possibilities, where knowledge and imagination converge to drive progress.
+    </div>
+    </div> 
+
+</body>
+</html>

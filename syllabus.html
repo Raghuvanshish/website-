@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='syllabus.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="header">
+    <marquee> <i>We welcome you to the website of Department of Data Science and Artificial Intelligence</i> </marquee>
+    </div>
+    <br>
+    <div class="text-container">
+        <ul class="logo_text">
+            <li class="logo_line">हिमाचल प्रदेश विश्वविद्यालय</li>
+            <img src="static/hpu logo.jpeg" alt="logo" class="logo">
+            <li class="logo_line">Himachal Pradesh University</li>
+        </ul>
+    </div>
+    <div class="right-logo2">
+        <h4>Department Of Data Science And Artificial Intelligence</h4>
+    </div>
+    <div class="navbar">
+        <ul>
+             
+        <li><a href="{{ url_for('index') }}"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="{{ url_for('about') }}"><i class="fa-regular fa-file-lines"></i>About</a></li>
+        <li><a href="{{ url_for('syllabus') }}"><i class="fa-solid fa-book"></i>Syllabus</a></li>
+        <li><a href="{{ url_for('gallery') }}"><i class="fa-regular fa-image"></i>Gallery</a></li>
+        <li><a href="{{ url_for('contactus') }}"><i class="fa-solid fa-phone"></i>ContactUs </a></li>
+        <li><a href="{{ url_for('login') }}"><i class="fa-solid fa-user"></i>Login</a></li>
+    
+        </ul>
+    </div>
+    <br>
+    <div class = "main content-area factstory-area">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="title-area">
+                        <div class = "page-title">
+                            
+                            <h2>Syllabus</h2>
+                        </div>
+                    </div>
+                    <section id="syllabus">
+                    <div class="inner-area">
+                        <div class="table-responsive">
+                            <ul>
+                                <li>
+                                    <a href="https://hpuniv.ac.in/upload/syllabus/6221b45c68577DiplomainDataScience.pdf">
+                                        <strong><h4>Diploma in Data Science (Effective from the session 2021-22)</h4></strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://hpuniv.ac.in/upload/syllabus/6221b50f07e3dDiplomainComputerApplicationsCourseCurriculum.pdf">
+                                        <strong><h4>Diploma in Computer Applications (Effective from the Session 2021-22)</h4></strong></a>
+                                </li>
+                                <li>
+                                    <a href = "https://hpuniv.ac.in/upload/syllabus/6221b54ab1ea6MasterofScienceM.Sc.inDataScience.pdf">
+                                        <strong><h4>Masters of Science (M.Sc.) in Data Science And Artificial Intelligence(Effective from the Session 2021-22)</h4> </strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+    <div id="footer-container">
+        <div id = "upper">
+          <div id = "part">
+            <div><h1>External Links</h1></div>
+            <br>
+            <div><a href="https://hpuniv.ac.in/innerpage/accessibility-statement.php">Accessibility</a></div>
+            <div><a href="https://hpuniv.ac.in/archives.php">Archive</a></div>
+            <div><a href="https://hpuniv.ac.in/downloads.php">Downloads</a></div>
+            <div><a href="https://hpuniv.ac.in/grivancesnew.php">Grievances</a></div>
+            <div><a href="https://hpuniv.ac.in/photogallery.php">Media Gallery</a></div>
+            <div><a href="https://hpuniv.ac.in/sitemap.php">Sitemap</a></div>
+            <div><a href="https://hpuniv.ac.in/syllabus.php">Syllabus</a></div>
+            <div><a href="https://email.gov.in/">Web Mail</a></div>
+            <div><a href="https://hpuniv.ac.in/university-detail/home.php?finance">Finance Wing</a></div>
+          </div>
+          <div id = "part2">
+            <div><a href="https://hpuniv.ac.in/university-detail/home.php?hp-university-alumni">Alumni</a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/awards-and-recognition.php">Awards and Recognition</a></div>
+            <div><a href="https://hpuniv.ac.in/feedback.php">Feedback</a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/help.php">Help</a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/related-links.php">Related Links</a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/spoken-tutorials.php">Spoken Tutorial</a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/terms--and-conditions.php">Terms & Conditions</a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/website-policies.php">Website Policies</a></div>
+            <div><a href="https://guesthouse.hpushimla.in/">Faculty House Online Booking</a></div>
+          </div>
+          <div id = "part3">
+            <div><a href="https://amanmovement.org/registration/public/amanmovement/">Anti Ragging Help Line </a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/conferences-and-events.php">Conferences and Events</a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/foreign-fellowships--and-conferences.php">Foreign Fellowships & Conferences</a></div>
+            <div><a href="https://hpuniv.ac.in/how-to-reach-maps.php">How to Reach?</a></div>
+            <div><a href="https://hpuniv.ac.in/innerpage/other-policies.php">Research and Development</a></div>
+            <div><a href="https://swayam.gov.in/">SWAYAM Programme</a></div>
+            <div><a href="https://hpuniv.ac.in/university-detail/home.php?ugc-hrdc">UGC-MMTTC</a></div>
+            <div><a href="https://hpuniv.ac.in/grivancesnew.php">Complaint Register(SC/ST/OBC)</a></div>
+          </div>
+        </div>
+    <br>
+    <hr>
+    <br>
+            <div id="middile">
+            <h1>Address</h1>
+          <div id = "part4">
+            <div>Himachal Pradesh University</div>
+            <div>Summer Hill Shimla-1710005</div>
+            <div>Phone No: 01772833555</div>
+          </div>
+        </div>
+      </div>
+    </hr>
+    
+    
+</body>
+</html>
+
+
+
+

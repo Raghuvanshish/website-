@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Horizontal Image Slider</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Add your CSS styles here */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    
+    .carousel-container {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    
+    .carousel {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+    }
+    
+    .carousel img {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
+    
+    .prev-button, .next-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      z-index: 1;
+      padding: 10px;
+      border-radius: 50%;
+    }
+    
+    .prev-button { left: 10px; }
+    .next-button { right: 10px; }
+    
+    .radio-buttons {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .radio-buttons label {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: #ddd;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .radio-buttons input[type="radio"] {
+      display: none;
+    }
+    
+    .radio-buttons input[type="radio"]:checked + label {
+      background-color: #333;
+    }
+    
+    /* Hover effect for buttons */
+    .prev-button:hover, .next-button:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+<div class="carousel-container">
+  <!-- Previous button with Font Awesome icon -->
+  <button class="prev-button" onclick="prevSlide()"><i class="fas fa-angle-left"></i></button>
+  
+  <div class="carousel">
+    <img src="{{ url_for('static', filename='1.JPG') }}" alt="Slide 1">
+    <img src="{{ url_for('static', filename='01.JPG') }}" alt="Slide 2">
+    <img src="{{ url_for('static', filename='2.JPG') }}" alt="Slide 3">
+    <img src="{{ url_for('static', filename='7.JPG') }}" alt="Slide 4">
+    <img src="{{ url_for('static', filename='sem.jpeg') }}" alt="Slide 5">
+  </div>
+
+  <div class="radio-buttons">
+    <input type="radio" name="slide" id="radio1" checked>
+    <label for="radio1"></label>
+    <input type="radio" name="slide" id="radio2">
+    <label for="radio2"></label>
+    <input type="radio" name="slide" id="radio3">
+    <label for="radio3"></label>
+    <input type="radio" name="slide" id="radio4">
+    <label for="radio4"></label>
+    <input type="radio" name="slide" id="radio5">
+    <label for="radio5"></label>
+  </div>
+
+  <!-- Next button with Font Awesome icon -->
+  <button class="next-button" onclick="nextSlide()"><i class="fas fa-angle-right"></i></button>
+</div>
+
+<script>
+  const carousel = document.querySelector('.carousel');
+  const slides = carousel.children;
+
+  function prevSlide() {
+    const lastSlide = carousel.lastElementChild;
+    carousel.insertBefore(lastSlide, carousel.firstElementChild);
+  }
+
+  function nextSlide() {
+    const firstSlide = carousel.firstElementChild;
+    carousel.appendChild(firstSlide);
+  }
+
+  setInterval(nextSlide, 4000);
+</script>
+
+</body>
+</html>
